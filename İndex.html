@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyt | İlk Sitem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
+        
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(15, 23, 42, 0.9); position: fixed; width: 100%; top: 0; z-index: 1000; backdrop-filter: blur(10px); border-bottom: 1px solid #1e293b; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #38bdf8; letter-spacing: 1px; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; margin-left: 30px; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: #38bdf8; }
+
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); }
+        .hero h1 { font-size: 4rem; font-weight: 800; margin-bottom: 20px; background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; margin-bottom: 40px; }
+        .btn { padding: 15px 40px; background: #38bdf8; color: #0f172a; text-decoration: none; border-radius: 50px; font-weight: 800; font-size: 1.1rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6); }
+
+        /* Features */
+        .features { padding: 100px 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; background: #0f172a; }
+        .card { background: #1e293b; padding: 40px; border-radius: 20px; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: #38bdf8; }
+        .card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #38bdf8; }
+        .card p { color: #94a3b8; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; border-top: 1px solid #1e293b; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">FYT</div>
+        <div class="nav-links">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#features">Özellikler</a>
+            <a href="#contact">İletişim</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Geleceği İnşa Et</h1>
+        <p>İlk web sitemin gücüyle, hızlı, güvenli ve modern bir deneyim. Hayallerini koda dönüştür.</p>
+        <a href="#" class="btn">Hemen Başla</a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="card">
+            <h3>⚡ Yıldırım Hızı</h3>
+            <p>Optimize edilmiş altyapı ile sayfaların saniyeler içinde yüklenir. Kullanıcılarını bekletme.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Tam Koruma</h3>
+            <p>Cloudflare ve AWS güvenliği ile verilerin ve siten her türlü saldırıya karşı korunur.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Sınırsız Ölçek</h3>
+            <p>Projen büyüdükçe altyapın da seninle büyür. Hiçbir sınırlama olmadan hayal et.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        &copy; 2026 Fyt Projesi. Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
